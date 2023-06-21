@@ -5,28 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dennis Bart-Plange</title>
-    <link rel="stylesheet" href="aos/aos.css">
+    <link rel="shortcut icon" href="images/bart logo.png" type="image/x-icon">
+    
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="aos/aos.css">
 </head>
 <body>
+
+    <div id="overlay" class="fixed inset-0 items-center justify-center bg-black bg-opacity-80 hidden">
+        <div class="max-w-md mx-auto p-6 bg-white rounded shadow-lg text-center">
+          <h2 class="text-xl font-semibold mb-4">Generated Code</h2>
+          <p class="mb-4">This is the code that pops up on the screen.</p>
+          <pre><code id="generatedCode" class="block px-4 py-2 bg-gray-100 rounded"></code></pre>
+          <button id="closeButton" class="text-gray-600 hover:text-gray-800 text-sm font-semibold">Close</button>
+        </div>
+      </div>
+      
 <section class="bg h-screen relative">
-    <!-- <div class="main-container absolute">
-    <div class="bg1"></div>
-    <div class="bg2"></div>
-    <div class="bg3"></div>
-    <div class="bg4"></div>
-    </div>     -->
+    
     <header>
-        <div class="container mx-auto relative">
-            <div class="flex flex-row justify-between align-center">
-                <div class="text-white">
+        <div class="container mx-auto relative flex justify-between lg:block">
+            <div class="flex flex-row justify-between align-center text-white">
+                <div>
                    <!--  <img src="images/bat.svg" alt="logo" class="w-24 "> -->
                    <span>
-                    <a href="index.html">Bart</a>
+                    <a href="index.html" class="text-sm"><img src="images/bart logo.png" alt="" class="w-16"></a>
                    </span>
                 </div>
-                <div class="hidden">
-                    <ul class="flex space-x-4">
+                <div class="hidden lg:flex text-lg">
+                    <ul class="flex space-x-6">
                         <li><a href="#">Home</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Portfolio</a></li>
@@ -38,22 +45,20 @@
 
             <!-- mobile btn -->
 
-            <button class="mobile-btn relative">
-                <div class="absolute">
+            <button class="mobile-btn lg:hidden"> 
                     <span class="one"></span>
                     <span class="two"></span>
-                    <span class="three"></span>
-                </div>
+                    <span class="three"></span> 
             </button>
         </div>
 
-        <div>
+        <div class="mobile hidden h-screen w-full absolute text-white bg-black text-center flex-col align-center justify-center pt-12" id="mobile-menu">
                <!-- mobile nav -->
-            <div class="hidden flex-col align-center" id="mobile-menu">
+            <div class="flex-col align-center justify-center" >
                 
                 <div>
-                    <ul class="mobile ">
-                        <li><a href="">Home</a></li>
+                    <ul class="flex flex-col space-y-8">
+                        <li ><a href="">Home</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Portfolio</a></li>
                         <li><a href="">Projects</a></li>
@@ -61,9 +66,7 @@
                     </ul>
                 </div>
 
-                <div>
-                    <img src="images/bat.svg" alt="logo" class="w-24">
-                </div>
+                
             </div>
         </div>
     </header>
@@ -73,14 +76,14 @@
     <main class="relative">
 
       <section>  
-        <div class="container mx-auto text-white p-2">
+        <div class="container mx-auto p-2">
             
             <div class="flex flex-col justify-center align-center pt-12">
             <!-- left side -->
             <div class=" mt-12">
                 <div class="flex flex-col justify-center lg:pt-6">
                     <h1 class="text-5xl font-bold md:text-7xl xl:text-8xl" data-aos="fade-up" data-aos-duration="1000">Bart-Plange Dennis</h1>
-                    <p class="text-lg font-semibold pt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">Web developer and designer</p>
+                    <p class="text-lg font-semibold pt-4 text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">Web developer and designer</p>
                 </div>
             </div>
             <!-- right side -->
@@ -91,12 +94,12 @@
             </div>
 
             <!-- msg btn -->
-      <div class="msg absolute">
-        <a href="mailto:bartplangedennis@gmail.com">
-            <img src="images/question.gif" alt="message" class="max-w-24 rounded-full">
-        </a>
-        
-      </div>
+            <div class="msg absolute">
+                <a href="mailto:bartplangedennis@gmail.com">
+                    <img src="images/question.gif" alt="message" class="max-w-24 rounded-full">
+                </a>
+                
+            </div>
         </div>
         
       </section>
@@ -119,31 +122,31 @@
                         
                         <div class="mb-6 flex">
                             <img src="images/5.png" alt="two" class="w-16 " data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
-                            <p class="ml-3 mt-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">HTML</p>
+                            <p class="ml-3 mt-5" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">HTML</p>
                         </div>
 
                         <div class="mb-6 pb-4 flex">
                             <p class="mr-3 mt-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">Bootstrap</p>
                             <img src="images/4.png" alt="two" class="w-16 " data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
-                            <p class="ml-3 mt-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">HTML</p>
+                            <p class="ml-3 mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">HTML</p>
                         </div>
                         
                         <div class="mb-6 pb-4 flex">
-                            <p class="mr-2 ml-6 mt-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">Bootstrap</p>
+                            <p class="mr-2 ml-6 mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Bootstrap</p>
                             <img src="images/3.png" alt="three" class="w-16" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
-                            <p class="ml-3 mt-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">HTML</p>
+                            <p class="ml-3 mt-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">HTML</p>
                         </div>
                         
                         <div class=" mb-6 pb-4 flex">
                             <p class="mr-3 mt-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">CSS</p>
                             <img src="images/2.png" alt="four" class="w-16" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
-                            <p class="ml-3 mt-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">Tailwind CSS</p>
+                            <p class="ml-3 mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Tailwind CSS</p>
                         </div>
                         
                         <div class="flex mb-6">
-                            <p class="mr-3 mt-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">React JS</p>
+                            <p class="mr-3 mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">React JS</p>
                             <img src="images/1.png" alt="five" class="w-16" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
-                            <p class="ml-3 mt-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">Javascript</p>
+                            <p class="ml-3 mt-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">Javascript</p>
                         </div>
                     </div>    
                 </div>
@@ -173,7 +176,7 @@
                     </div>
 
                     <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque rem impedit sapiente fugit officiis minus, quo itaque deleniti nisi ipsa!</p>
+                        <p>I have a strong desire to make impact and to see businesses grow due to my work or a way was able to hel. I seek new challenges and very opened for any kind of work</p>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
                         <a href="#" type="submit" class="btn-inner py-4 font-semibold">Let's begin Something together
@@ -202,7 +205,7 @@
                 <div class="flex flex-col space-x-4 lg:flex-row">
                     
                     <!-- card 1 -->
-                    <div class="relative w-full h-48 md:h-72 shadow-black shadow-lg flip-card pb-4 mb-8 bg-cardinner" data-aos="fade-up">
+                    <div class="relative w-full h-48 md:h-72 shadow-black shadow-md flip-card pb-4 mb-8 bg-cardinner" data-aos="fade-up">
                         <div class="rounded-lg p-4">
     
                         <div class="front items-center text-white p-4 md:pt-8">
